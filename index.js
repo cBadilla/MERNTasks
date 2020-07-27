@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.json({ extend: true }));
 
 //Crear puerto
-const port = process.env.port || 4000;
+const port = process.env.PORT || 4000;
 
 
 //Importar rutas
