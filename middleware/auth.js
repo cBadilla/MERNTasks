@@ -6,7 +6,7 @@ module.exports = function(req, res, next){
     const token = req.header('x-auth-token');
 
      // Website you wish to allow to connect
-     res.setHeader('Access-Control-Allow-Origin', '*');
+     res.setHeader('Access-Control-Allow-Origin', 'http://localhost:4000');
 
      // Request methods you wish to allow
      res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
