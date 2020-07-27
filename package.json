@@ -4,8 +4,12 @@
   "description": "MERN API para MERN TASKS",
   "main": "index.js",
   "scripts": {
-    "start": "node .",
-    "dev": "nodemon ."
+    "dev": "react-scripts start",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env = jsdom ",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "author": "César Badilla Anchía",
   "license": "ISC",
@@ -19,6 +23,7 @@
     "express": "^4.17.1",
     "express-validator": "^6.6.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.25"
+    "mongoose": "^5.9.25",
+    "serve": "^11.3.2"
   }
 }
