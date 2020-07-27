@@ -5,6 +5,9 @@ module.exports = function(req, res, next){
     //Leer el toquen del header
     const token = req.header('x-auth-token');
 
+    // Website you wish to allow to connect
+    res.setHeader('Access-Control-Allow-Origin', '*');
+
     //Revisar el toquen
     if (!token) {
         return res.status(401).json({msg: 'No hay token, permiso no válido'})
