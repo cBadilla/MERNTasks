@@ -1,0 +1,26 @@
+{
+   "message": {
+      "version": "1.0",
+      "header": {
+         "operationCode": "BCO_Prestamo_ConsultarTipoCambio",
+         "origin": {
+            "channel": "EBAC",
+            "country": "TDC",
+            "server": "bacbnk-bacclm-dt1.pegacloud.io"
+         },
+         "target": {
+            "channel": "EBAC",
+            "country": "TDC",
+            "server": "bacbnk-bacclm-dt1.pegacloud.io"
+         }
+      },
+      "key": {
+         "exchangeRate": {
+            "bankCode": "01",
+            "currency": "USD",
+            "preferentialExchangeRate": "*ALL"
+         },
+         "serviceScript": "RESXML01828.XML"
+      }
+   }
+}
